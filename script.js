@@ -26,7 +26,7 @@
 // GC$ 1,00 -> 2
 
 
-let saque = entrada  = prompt('Informe o valor de GC$ para saque (Apenas números inteiros): ');
+let saque = Number.parseInt(prompt('Informe o valor de GC$ para saque (Apenas números inteiros): '));
 
 let contador50 = 0;
 let contador10 = 0;
@@ -58,7 +58,7 @@ while (saque >= 1) {
 
 }
 let total = (contador50*50+contador10*10+contador5*5+contador1*1);
-let resto = entrada - total;
+let resto = saque - total;
 
 if(contador50 > 0){
     document.write("A quantidade de notas de GC$50 é: " + contador50 + '<br />');
